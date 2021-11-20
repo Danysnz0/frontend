@@ -1,26 +1,23 @@
+import { BrowserRouter as Router,Route,Switch} from "react-router-dom";
 import React from "react"; // Se cocidera una buena practica importar la libreria de React así no sea necesario desde la versión 17
-import Header from "./components/Header";
-import './App.css';
+import Navp from "./components/Navp";
+import Inicio from "./components/Inicio";
 import Footer from "./components/Footer";
+import Iniciosesion from "./components/Iniciosesion";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <section>
-      <Header/>
-      </section>
-      <section>
 
-        <p>
-          Editar <code>src/App.js</code> and save to reload.
-        </p>
-      </section>
-      <section>
-      <Footer/>
-      </section>
-      </header>
-    </div>
+        <Switch>
+          <Route path='/inicio'>
+            <Inicio/>
+          </Route>
+
+          
+
+        </Switch>
+      
   );
 }
 
