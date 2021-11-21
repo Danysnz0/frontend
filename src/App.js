@@ -4,19 +4,27 @@ import Navp from "./components/Navp";
 import Inicio from "./components/Inicio";
 import Footer from "./components/Footer";
 import Iniciosesion from "./components/Iniciosesion";
+import Contacto from "./components/Contacto";
+import './App.module.css';
 
 
 function App() {
   return (
 
-        <Switch>
-          <Route path='/inicio'>
-            <Inicio/>
+        <Router className={"containerapp"}>
+          <Navp className="Navp"/>
+          <Route path='/inicio' exact component={Inicio}/>
+          
+          <Route path='/contacto'>
+            <Contacto/>
           </Route>
-
+          
+          <Route path='/iniciosecion'>
+            <Iniciosesion/>
+          </Route>
           
 
-        </Switch>
+        </Router>
       
   );
 }

@@ -3,7 +3,7 @@ import { Nav, Navbar, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navp.css';
 import sena from '../assets/img/sena.png';
-import logosenarama from '../assets/img/logosenarama.png';
+import logosenarama from '../assets/img/diseñosenarama.png';
 import facebook from '../assets/img/facebook.png';
 import twitter from '../assets/img/twitter.png';
 import instagram from '../assets/img/instagram.png';
@@ -24,13 +24,13 @@ export default function Navp() {
                             <Nav.Link href="#pricing">PROYECTOS</Nav.Link>
                             <Nav.Link href="#pricing">SENARAUTAS</Nav.Link>
                             <Nav.Link href="#pricing">CARTELERA</Nav.Link>
-                            <Nav.Link href="#">CONTACTO</Nav.Link>
+                            <Nav.Link href="/contacto">CONTACTO</Nav.Link>
                         </Nav>
                         
                         <Nav className="redes">
 
                             <lu>
-                                <li><Nav.Link href="#deets">INICIO SESION|REGISTRO</Nav.Link></li>
+                                <li><Nav.Link href="/iniciosecion">INICIO SESION|REGISTRO</Nav.Link></li>
                             </lu>
 
                             

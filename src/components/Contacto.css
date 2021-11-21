@@ -1,10 +1,11 @@
 .contact-form{
     --form-ok-color:#4caf50;
-         --form-error-color:#f44336;
-         margin-left: auto;
-         margin-right: auto;
-         width: 60%;
-     }
+        --form-error-color:#f44336;
+        margin: 12rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
      .contact-form > *{
         padding: 0.5rem;
         margin: 1rem auto;
