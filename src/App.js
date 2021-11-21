@@ -5,13 +5,13 @@ import Inicio from "./components/Inicio";
 import Footer from "./components/Footer";
 import Iniciosesion from "./components/Iniciosesion";
 import Contacto from "./components/Contacto";
-import './App.module.css';
+import styles from './App.module.css';
 
 
 function App() {
   return (
 
-        <Router className={"containerapp"}>
+        <Router className={styles["containerapp"]}>
           <Navp className="Navp"/>
           <Route path='/inicio' exact component={Inicio}/>
           
