@@ -15,5 +15,8 @@
 
 }
 .login-end-register{
-    background-color: rgba(255, 0, 0, 0.123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
 }

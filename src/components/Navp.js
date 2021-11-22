@@ -30,7 +30,7 @@ export default function Navp() {
                         <Nav className="redes">
 
                             <lu>
-                                <li><Nav.Link href="/iniciosecion">INICIO SESION|REGISTRO</Nav.Link></li>
+                                <li><Nav.Link href="/iniciosesion">INICIO SESION|REGISTRO</Nav.Link></li>
                             </lu>
 
                             

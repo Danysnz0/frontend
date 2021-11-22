@@ -28,6 +28,9 @@
         font-size: 1rem;
         font-family: Verdana;
     }
+    .custom-select{
+        width:100%;
+    }
     .contact-form input[type="submit"]{
         width: 50%;
         font-weight: bold;

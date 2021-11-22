@@ -19,7 +19,7 @@ function App() {
             <Contacto/>
           </Route>
           
-          <Route path='/iniciosecion'>
+          <Route path='/iniciosesion'>
             <Iniciosesion/>
           </Route>
           
