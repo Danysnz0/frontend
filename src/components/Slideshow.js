@@ -14,7 +14,7 @@ export default function Slideshow() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={slide1}
+                        src={slide4}
                         alt="First slide"
                         />
                         <Carousel.Caption>

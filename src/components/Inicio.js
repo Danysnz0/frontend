@@ -1,6 +1,7 @@
 import React from 'react'
 import Slideshow from './Slideshow';
 import {Container, Col, Image, Row} from 'react-bootstrap';
+import style from './Inicio.module.css';
 
 
 
@@ -10,9 +11,9 @@ export default function Inicio() {
             <div>
             <Slideshow/>
             </div>
-            
-                   <Container>
-                        <Row>
+
+            <Container>
+                <Row>
                     <Col xs={6} md={4}>
                     <Image src="holder.js/171x180" rounded />
                     </Col>
@@ -22,7 +23,7 @@ export default function Inicio() {
                         <Col xs={6} md={4}>
                     <Image src="holder.js/171x180" thumbnail />
                     </Col>
-             </Row>
+                </Row>
             </Container>
 
         </div> 

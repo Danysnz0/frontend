@@ -9,11 +9,7 @@ import Navp from './components/Navp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>  
-      <div>
-        <App/>
-      </div>                              
-    </Router>
+        <App/>                          
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,13 +1,13 @@
 import React from 'react';
-import './Footer.css';
+import style from './Footer.module.css';
 
 
 
 export default function Footer() {
     return (
-        <div className= "footer">
+        <div className= {style["footer"]}>
            
-            <footer className="container">
+            <footer className={style["container"]}>
                 
                 <p>servicio Nacional de Aprendizaje SENA - Centro de Formación en Actividad Física y Cultura Regional Distrito Capital</p>
                 <br/>

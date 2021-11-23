@@ -6,41 +6,39 @@
   margin: 0;
   padding: 0;
 }
+.cuerpo{
+    margin-bottom: 100;
+    z-index: 1000;
+    
+}
 .container{
     padding: 1rem 1rem;
     display: inline-flex;
     min-width: 100%;
-    position: fixed;
     left: 0;
     top: 0;
     align-items: center;
-    
+    flex-shrink: 1;
 }
 .menu{
-    flex-grow: 4;
     color:  #fc7323;
 }
 
 .logoscorporativos{
-    width: 75px;
+    width: 100px;
     margin: 1rem;
 }
 .redes{
     display: block;
     flex-direction: column;
-    justify-content: flex-end;
-    
-}
-.redes ul{
-    flex-direction:column;
-}
-.logosr{
-    display:flex;
-    
-}
+    justify-content: flex-end;   
+}    
 .logosredes{
     width: 50px;
 }
 .init{
     padding: 16px;
+}
+.navbar-light .navbar-nav .nav-link{
+     text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
 }
