@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Button,} from 'react-bootstrap';
-import './Normalize.css'
 import styles from './Iniciosesion.module.css';
 import imageniniciosesion from '../assets/img/imageniniciosesion.jpg';
 

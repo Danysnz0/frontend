@@ -11,9 +11,12 @@ import styles from './App.module.css';
 function App() {
   return (
 
-        <Router className={styles["containerapp"]}>
-          <Navp className="Navp"/>
-          <Route path='/inicio' exact component={Inicio}/>
+        <Router>
+          <Navp/>
+
+          <Route path='/inicio'>
+            <Inicio/>
+          </Route>
           
           <Route path='/contacto'>
             <Contacto/>

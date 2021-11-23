@@ -26,13 +26,13 @@
     margin: 1rem;
 }
 .redes{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-end;
     
 }
 .redes ul{
-    flex-direction: column;
+    flex-direction:column;
 }
 .logosr{
     display:flex;
