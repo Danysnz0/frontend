@@ -4,11 +4,12 @@ import slide2 from '../assets/img/Slide2.jpg';
 import slide3 from '../assets/img/Slide3.jpg';
 import slide4 from '../assets/img/Slide4.jpg';
 import {Carousel} from 'react-bootstrap';
+import style from './Slideshow.module.css';
 
 
 export default function Slideshow() {
     return (
-        <div>
+        <div className={style["container"]}>
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -45,7 +46,7 @@ export default function Slideshow() {
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-</Carousel>
+            </Carousel>
         </div>
     )
 }

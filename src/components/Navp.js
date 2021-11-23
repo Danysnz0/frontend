@@ -13,7 +13,7 @@ export default function Navp() {
     return (
         <div>
             <Navbar  expand="lg">
-                <Container className="container">
+                <Container className={style["container"]}>
                     <Navbar.Brand href="#home"><img className={style["logoscorporativos"]} src={sena}></img></Navbar.Brand>
                     <Navbar.Brand href="#home"><img className={style["logoscorporativos"]} src={logosenarama}></img></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -12,7 +12,7 @@ function App() {
   return (
 
         <Router>
-          <Navp/>
+          <Navp className={styles["barra"]}/>
 
           <Route path='/inicio'>
             <Inicio/>
