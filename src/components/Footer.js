@@ -8,8 +8,8 @@ export default function Footer() {
     return (
         
 
-        <Container style={{flexDirection:"column",justifyContent:"center"}}>
-            <Row style={{marginLeft:"500px"}}>
+        <Container style={{flexDirection:"column",justifyContent:"center"}} className={style["footer"]}>
+            <Row style={{marginLeft:"500px", padding:"2rem"}}>
                 <Col>
                     <div style={{fontSize:"12px", alignItems:"center"}}>
                         <p>Servicio Nacional de Aprendizaje SENA - Centro de Formación en Actividad Física y Cultura Regional Distrito Capital

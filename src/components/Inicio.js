@@ -13,7 +13,7 @@ import Footer from './Footer'
 export default function Inicio() {
     return (
         
-        <div className={style["container"]}>
+        <div >
                 <Row >
                     <Col >
                     <Slideshow/>
