@@ -1,9 +1,18 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .footer{
-    margin-top: 4rem;
+    flex-direction: row;
+    
+    
 }
 
-
-p{
-    margin: 5rem;
-    margin-top: 2rem;
+.container{
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
 }

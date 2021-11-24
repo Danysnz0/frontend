@@ -15,39 +15,39 @@ export default function Navp() {
             <Navbar expand="lg" sticky fixed="top" >
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img className={style["logoscorporativos"]} src={sena} />
+                        <img className={style["logoscorporativos"]} style={{width:"80px"}} src={sena} />
                     </Navbar.Brand>
                     <Navbar.Brand href="#home">
-                        <img className={style["logoscorporativos"]} src={logosenarama} />
+                        <img className={style["logoscorporativos"]} style={{width:"100px"}} src={logosenarama} />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className={style["menu"]}>
-                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color: "#4caf50"}}>INICIO</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#4caf50" }}>PROYECTOS</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#4caf50" }}>SENARAUTAS</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#4caf50" }}>CARTELERA</Nav.Link>
-                            <Nav.Link href="/contacto" style={{fontWeight: "bold", color: "#4caf50" }}>CONTACTO</Nav.Link>
+                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color:  "#fff"}}>INICIO</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>PROYECTOS</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>SENARAUTAS</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>CARTELERA</Nav.Link>
+                            <Nav.Link href="/contacto" style={{fontWeight: "bold", color:"#fff" }}>CONTACTO</Nav.Link>
                         </Nav>
 
-                        <Col md={4}>
-                            <Row>
-                                <Col md={2}>
-                                    <img width={40} src={facebook} />
+                        <Col md={4} className={style["col"]} style={{marginLeft:"730px"}}>
+                            <Row style={{marginLeft: "1px"}}>
+                                <Col md={1} >
+                                    <img width={35} src={facebook} />
                                 </Col>
-                                <Col md={2}>
-                                    <img width={40} src={twitter} />
+                                <Col md={1} >
+                                    <img width={35} src={twitter} />
                                 </Col>
-                                <Col md={2}>
-                                    <img width={40} src={instagram} />
+                                <Col md={1} >
+                                    <img width={35} src={instagram} />
                                 </Col>
-                                <Col md={2}>
-                                    <img width={40} src={youtube} />
+                                <Col md={1} >
+                                    <img width={35} src={youtube} />
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <Nav.Link href="/iniciosesion">
+                                    <Nav.Link href="/iniciosesion" style={{fontSize: "13px", color:"#fff"}}>
                                         INICIO SESION | REGISTRO
                                     </Nav.Link>
                                 </Col>

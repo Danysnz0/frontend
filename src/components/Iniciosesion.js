@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Button,} from 'react-bootstrap';
 import styles from './Iniciosesion.module.css';
-import imageniniciosesion from '../assets/img/imageniniciosesion.jpg';
+import imageniniciosesion from '../assets/img/imageniniciosesion1.jpg';
 
 export default function Iniciosesion() {
     return (
@@ -26,7 +26,8 @@ export default function Iniciosesion() {
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
-                </Form>    
+                </Form> 
+                   
             </div>
         </div>
     )

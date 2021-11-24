@@ -1,8 +1,8 @@
 import React from 'react';
-import slide1 from '../assets/img/Slide1.jpg';
-import slide2 from '../assets/img/Slide2.jpg';
+import slide1 from '../assets/img/Slide1p.jpg';
+import slide2 from '../assets/img/Slide2p.jpg';
 import slide3 from '../assets/img/Slide3.jpg';
-import slide4 from '../assets/img/Slide4.jpg';
+import slide4 from '../assets/img/Slide4p.jpg';
 import {Carousel} from 'react-bootstrap';
 import style from './Slideshow.module.css';
 
@@ -14,11 +14,12 @@ export default function Slideshow() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={slide4}
-                        alt="First slide"
+                        src={slide1}
+                        alt="First slide" 
+                        style={{height:"850px"}}
                         />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
+                        <h3>Ecosistema Creativo </h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                 </Carousel.Item>
@@ -26,7 +27,8 @@ export default function Slideshow() {
                     <img
                         className="d-block w-100"
                         src={slide2}
-                        alt="Second slide"
+                        alt="Second slide" 
+                        style={{height:"850px"}}
                     />
 
                     <Carousel.Caption>
@@ -37,8 +39,9 @@ export default function Slideshow() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={slide3}
+                        src={slide4}
                         alt="Third slide"
+                        style={{height:"850px"}}
                     />
 
                     <Carousel.Caption>
