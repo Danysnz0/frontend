@@ -10,6 +10,6 @@ export default function Cartelera() {
     return (
         <div>
         <p>hola mundo</p>
-           </div>
+            </div>
     )
 }
