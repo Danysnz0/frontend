@@ -10,8 +10,7 @@ import Navp from './components/Navp';
 
 ReactDOM.render(
   <React.StrictMode>
-        <App/> 
-        <Inicio/>                         
+        <App/>                         
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,14 +2,22 @@ import { BrowserRouter, BrowserRouter as Router,Route,Switch} from "react-router
 import React from "react"; // Se cocidera una buena practica importar la libreria de React así no sea necesario desde la versión 17
 import Navp from "./components/Navp";
 import Inicio from "./components/Inicio";
-import Footer from "./components/Footer";
 import Iniciosesion from "./components/Iniciosesion";
 import Contacto from "./components/Contacto";
 import Cartelera from "./components/Cartelera";
+import Registro from './components/Registropasouno';
 import styles from './App.module.css';
 
 const LoginNavar = () => {
-  return <Iniciosesion/>   
+  return <Switch>
+          <Route>
+            <Iniciosesion path="/iniciodesesion"/> 
+          </Route>
+          <Route>
+            <Iniciosesion path="/iniciodesesion"/> 
+          </Route>
+          </Switch>  
+    
 }
 const MainNavar = () => {
   return(<>
@@ -25,6 +33,11 @@ const MainNavar = () => {
       <Route path='/cartelera'>
         <Cartelera/>
       </Route>
+      <Route path='/registro'>
+        <Registro/>
+      </Route>
+
+      
     </>
   )
 }
