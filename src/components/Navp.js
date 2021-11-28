@@ -36,11 +36,11 @@ export default function Navp() {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className={estilo["menu"]}>
-                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color:  "#fff"}}>INICIO</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>PROYECTOS</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>SENARAUTAS</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>CARTELERA</Nav.Link>
-                            <Nav.Link href="/contacto" style={{fontWeight: "bold", color:"#fff" }}>CONTACTO</Nav.Link>
+                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color:  "#fff", fontFamily: "verdana"}}>INICIO</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>PROYECTOS</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>SENARAUTAS</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>CARTELERA</Nav.Link>
+                            <Nav.Link href="/contacto" style={{fontWeight: "bold", color:"#fff", fontFamily: "verdana" }}>CONTACTO</Nav.Link>
                         </Nav>
 
                         <Col md={4} className={estilo["col"]} style={{marginLeft:"730px"}}>
