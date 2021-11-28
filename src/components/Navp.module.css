@@ -6,9 +6,13 @@
   margin: 0;
   padding: 0;
 }
-.cuerpo{
+.nav{
+    background: transparent;
     margin-bottom: 100;
     z-index: 1000;
+}
+.nav.active{
+    background: #238275;
 }
 .menu{
     color:  #fc7323;

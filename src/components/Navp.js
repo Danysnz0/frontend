@@ -1,28 +1,41 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import style from './Navp.module.css';
+import estilo from './Navp.module.css';
+import './Navptrans.css';
 import sena from '../assets/img/sena.png';
 import logosenarama from '../assets/img/diseñosenarama.png';
 import facebook from '../assets/img/facebook.png';
 import twitter from '../assets/img/twitter.png';
 import instagram from '../assets/img/instagram.png';
 import youtube from '../assets/img/youtube.png';
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 export default function Navp() {
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground= () => {
+        if(window.scrollY >= 5){
+            setNavbar(true)
+        }else{
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+
     return (
-        <div className={style["cuerpo"]}>
-            <Navbar expand="lg" sticky fixed="top" >
+        
+            <Navbar  className= {navbar ? 'nav active' : 'nav'} expand="lg" sticky fixed="top" >
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img className={style["logoscorporativos"]} style={{width:"80px"}} src={sena} />
+                        <img className={estilo["logoscorporativos"]} style={{width:"50px"}} src={sena} />
                     </Navbar.Brand>
                     <Navbar.Brand href="#home">
-                        <img className={style["logoscorporativos"]} style={{width:"100px"}} src={logosenarama} />
+                        <img className={estilo["logoscorporativos"]} style={{width:"60px"}} src={logosenarama} />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav className={style["menu"]}>
+                        <Nav className={estilo["menu"]}>
                             <Nav.Link href="/inicio" style={{fontWeight: "bold", color:  "#fff"}}>INICIO</Nav.Link>
                             <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>PROYECTOS</Nav.Link>
                             <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff" }}>SENARAUTAS</Nav.Link>
@@ -30,7 +43,7 @@ export default function Navp() {
                             <Nav.Link href="/contacto" style={{fontWeight: "bold", color:"#fff" }}>CONTACTO</Nav.Link>
                         </Nav>
 
-                        <Col md={4} className={style["col"]} style={{marginLeft:"730px"}}>
+                        <Col md={4} className={estilo["col"]} style={{marginLeft:"730px"}}>
                             <Row style={{marginLeft: "1px"}}>
                                 <Col md={1} >
                                     <img width={35} src={facebook} />
@@ -57,6 +70,5 @@ export default function Navp() {
                 </Container>
             </Navbar>
 
-        </div>
     )
 }

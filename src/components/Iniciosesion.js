@@ -3,7 +3,6 @@ import { Link, Switch, Route, useRouteMatch} from 'react-router-dom';
 import {useForm} from "react-hook-form";
 import { useState } from 'react';
 import Registropasouno from './Registropasouno';
-import { } from 'react-bootstrap';
 import styles from './Iniciosesion.module.css';
 import imageniniciosesion from '../assets/img/imageniniciosesion1.jpg';
 import logosenarama from '../assets/img/diseñosenarama.png';
@@ -78,15 +77,11 @@ export default function Iniciosesion() {
 
             </form>
 
-
-
                 <p>¿Aún no eres Senarauta?</p>
                 <Link to={`${url}/registropasouno`}>!Registrate!</Link>
                 <Link href="#">Terminos y condiciones </Link>
                 <Switch>
-                  <Route path={`${path}:/registropasouno`}  component={Registropasouno}>
-                    <Registropasouno/>
-                  </Route>
+                  <Route path={`${path}:/registropasouno`}  exact component={Registropasouno}/>
                 </Switch>
             </div>
             </div>
