@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import style from './Navp.module.css';
 import sena from '../assets/img/sena.png';
 import logosenarama from '../assets/img/diseñosenarama.png';
