@@ -1,7 +1,6 @@
 import React from 'react';
 import slide1 from '../assets/img/Slide1p.jpg';
 import slide2 from '../assets/img/Slide2p.jpg';
-import slide3 from '../assets/img/Slide3.jpg';
 import slide4 from '../assets/img/Slide4p.jpg';
 import {Carousel} from 'react-bootstrap';
 import style from './Slideshow.module.css';

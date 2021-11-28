@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
 import estilo from './Navp.module.css';
 import './Navptrans.css';
@@ -25,7 +25,7 @@ export default function Navp() {
 
     return (
         
-            <Navbar  className= {navbar ? 'nav active' : 'nav'} expand="lg" sticky fixed="top" >
+            <Navbar  className= {navbar ? 'nav active' : 'nav'} expand="lg" sticky fixed="top"  style={{padding: 0}}>
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <img className={estilo["logoscorporativos"]} style={{width:"50px"}} src={sena} />
@@ -36,8 +36,8 @@ export default function Navp() {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className={estilo["menu"]}>
-                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color:  "#fff", fontFamily: "verdana"}}>INICIO</Nav.Link>
-                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>PROYECTOS</Nav.Link>
+                            <Nav.Link href="/inicio" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }} active>INICIO</Nav.Link>
+                            <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana"}}>PROYECTOS</Nav.Link>
                             <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>SENARAUTAS</Nav.Link>
                             <Nav.Link href="#pricing" style={{fontWeight: "bold", color: "#fff", fontFamily: "verdana" }}>CARTELERA</Nav.Link>
                             <Nav.Link href="/contacto" style={{fontWeight: "bold", color:"#fff", fontFamily: "verdana" }}>CONTACTO</Nav.Link>
@@ -46,21 +46,21 @@ export default function Navp() {
                         <Col md={4} className={estilo["col"]} style={{marginLeft:"730px"}}>
                             <Row style={{marginLeft: "1px"}}>
                                 <Col md={1} >
-                                    <img width={35} src={facebook} />
+                                    <img width={30} src={facebook} />
                                 </Col>
                                 <Col md={1} >
-                                    <img width={35} src={twitter} />
+                                    <img width={30} src={twitter} />
                                 </Col>
                                 <Col md={1} >
-                                    <img width={35} src={instagram} />
+                                    <img width={30} src={instagram} />
                                 </Col>
                                 <Col md={1} >
-                                    <img width={35} src={youtube} />
+                                    <img width={30} src={youtube} />
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <Nav.Link href="/iniciosesion" style={{fontSize: "13px", color:"#fff"}}>
+                                    <Nav.Link href="/iniciosesion" style={{fontSize: "11px", color:"#fff", fontFamily: "verdana" }}>
                                         INICIO SESION | REGISTRO
                                     </Nav.Link>
                                 </Col>
